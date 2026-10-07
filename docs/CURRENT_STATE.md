@@ -2,7 +2,7 @@
 
 ## Status
 
-AI Career Agent project foundation is complete. The application runs locally and exposes a working FastAPI health endpoint.
+AI Career Agent foundation is complete and the first domain functionality is implemented. The application can accept, validate, and return structured Job data through the API.
 
 ## What Works
 
@@ -14,6 +14,15 @@ AI Career Agent project foundation is complete. The application runs locally and
 - Git repository initialized with `main` branch
 - GitHub remote configured using SSH
 - Repository is private
+- `POST /jobs` accepts structured job data
+- Job input is validated using Pydantic
+- Required and optional Job fields are defined
+- `JobCreate` defines the API input contract
+- `JobResponse` defines the API response contract
+- POST /jobs returns HTTP 201 with a simulated ID
+- Job responses currently use a temporary `id=1`
+- Automated API tests using pytest and FastAPI TestClient
+- Three passing tests covering successful job creation, missing required fields, and invalid field types
 
 ## Current Structure
 
@@ -24,11 +33,10 @@ AI Career Agent project foundation is complete. The application runs locally and
 
 ## Next
 
-Build the first Career Agent domain functionality:
+Continue building the Career Agent domain model:
 
-1. Define a Job model
-2. Create `POST /jobs`
-3. Validate request/response data with Pydantic
+1. Define the Candidate Profile model
+2. Create the Candidate Profile API
 
 ## Not Implemented Yet
 
@@ -41,3 +49,4 @@ Build the first Career Agent domain functionality:
 - Agent/tool calling
 - RAG
 - Cloud deployment
+
