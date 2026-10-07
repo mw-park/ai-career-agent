@@ -60,3 +60,38 @@ These are intentionally deferred:
 - Explain recommendations rather than only producing scores
 - Keep AI output structured and testable
 - Add automation gradually rather than making the system autonomous by default
+
+## Evaluation Model
+
+Job evaluation separates objective job facts, candidate preferences, and AI-generated evaluation.
+
+### Job Facts
+
+Examples include:
+
+- Salary range
+- Location
+- Work arrangement (remote / hybrid / onsite)
+- Travel percentage
+- Employment type
+- Job description
+
+### Candidate Preferences
+
+Candidate preferences define constraints and priorities used when evaluating opportunities, such as compensation requirements, acceptable travel, and preferred work arrangement.
+
+### Evaluation Dimensions
+
+The initial evaluation will consider:
+
+- Interview probability
+- Resume fit
+- Company quality
+- Technology stack
+- Long-term career value
+
+The evaluation will also produce an overall fit, strengths, gaps, disqualifiers, recommendation, and concise reasoning.
+
+A strong overall fit does not override a candidate constraint. For example, an otherwise strong opportunity may still receive a Pass recommendation if compensation, travel, or work arrangement violates an important candidate requirement.
+
+
